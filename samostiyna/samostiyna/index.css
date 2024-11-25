@@ -1,0 +1,122 @@
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #da9fd4;
+        color: #9a2c93;
+    }
+    .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .game-icon {
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        color: #4F2C9A;
+        font-weight: bold;
+    }
+    
+    h1 span {
+        color: #9B30F2;
+    }
+    
+    p {
+        font-size: 1em;
+        color: #4F2C9A;
+        margin: 10px 0 20px;
+    }
+    
+    .start-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #FFFFFF;
+        background-color: #6A1B9A;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .start-button:hover {
+        background-color: #d46ed2;
+    }
+    
+    .footer {
+        margin-top: 20px;
+        font-size: 0.8em;
+        color: #4F2C9A;
+    }
+    
+   /* Стиль для модального вікна*/
+    .modal-content {
+    background-color: #ffffff; 
+    color: #000000;           
+    border-radius: 8px;       /* Заукруглення */
+    padding: 15px;
+    }
+    
+    
+    
+    .modal-body {
+    color: #000000;        
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+    
+    
+    .modal-footer .btn {
+    color: #ffffff;
+    background-color: #6A1B9A; 
+    border: none;
+    }
+    
+    .modal-footer .btn:hover {
+    background-color: #4f2c93; /* Більш темний колір коли наводиш на кнопку */
+    }
+    .autor-photo {
+    width: 100px;            
+    height: 100px;         
+    display: block;
+    margin: 0 auto 20px;    
+    }   
+    .btn-custom {
+    background-color: #6A1B9A;   
+    color: #FFFFFF;              
+    border: none;               
+    padding: 10px 20px;          
+    font-size: 1rem;           
+    border-radius: 8px;         
+    cursor: pointer;             
+    transition: background-color 0.3s; 
+    }
+    
+    .btn-custom:hover {
+    background-color: #4f2c93;  
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #da9fd4;
+        color: #9a2c93;
+    }

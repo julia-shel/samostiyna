@@ -1,0 +1,150 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Connect Four</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/style.css">
+    <link rel="script" href="/script.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+	
+	<style>
+		/* Стили для таймера */
+		.timer {
+			display: inline-block;
+			padding: 5px 15px;
+			background-color: #4f2c93; /* Фиолетовый цвет фона */
+			color: #ffffff;           /* Белый цвет текста */
+			font-size: 1rem;
+			font-weight: bold;
+			border-radius: 8px;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		/* Центрирование таймера после заголовка игрока */
+		#player {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+        /* Кнопка рівня */
+		.level-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			z-index: 1000; /* Щоб кнопка була над усіма елементами */
+			background-color: #4f2c93;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 1rem;
+			cursor: pointer;
+			text-transform: uppercase;
+		}
+
+		.level-button:hover {
+			background-color: #6a33aa;
+		}
+	</style>
+</head>
+<link rel="icon" href="/building-blocks-57-214574.png" type="image/x-icon">
+<audio id="background-music" src="/music.mp3.mp3" autoplay loop></audio>
+<body>
+    <div id="win-animation" class="hidden"></div>
+	<div id="main-container">
+
+		<div id="player">
+			<!-- Название текущего игрока -->
+			<h1 id="player-type">Гравець - 1</h1>
+			
+			<!-- Таймер игры сразу под заголовком игрока -->
+			<div class="timer" id="gameTimer">Час: 00:00</div>
+		</div>
+
+		<div id="grid">
+
+			<div class="row">
+				<div class="col"><button class="btn btn-1"></button></div>
+				<div class="col"><button class="btn btn-2"></button></div>
+				<div class="col"><button class="btn btn-3"></button></div>
+				<div class="col"><button class="btn btn-4"></button></div>
+				<div class="col"><button class="btn btn-5"></button></div>
+				<div class="col"><button class="btn btn-6"></button></div>
+				<div class="col"><button class="btn btn-7"></button></div>
+			</div>
+
+			<div class="row">
+				<div class="col"><button class="btn btn-8"></button></div>
+				<div class="col"><button class="btn btn-9"></button></div>
+				<div class="col"><button class="btn btn-10"></button></div>
+				<div class="col"><button class="btn btn-11"></button></div>
+				<div class="col"><button class="btn btn-12"></button></div>
+				<div class="col"><button class="btn btn-13"></button></div>
+				<div class="col"><button class="btn btn-14"></button></div>
+			</div>
+
+			<div class="row">
+				<div class="col"><button class="btn btn-15"></button></div>
+				<div class="col"><button class="btn btn-16"></button></div>
+				<div class="col"><button class="btn btn-17"></button></div>
+				<div class="col"><button class="btn btn-18"></button></div>
+				<div class="col"><button class="btn btn-19"></button></div>
+				<div class="col"><button class="btn btn-20"></button></div>
+				<div class="col"><button class="btn btn-21"></button></div>
+			</div>
+
+			<div class="row">
+				<div class="col"><button class="btn btn-22"></button></div>
+				<div class="col"><button class="btn btn-23"></button></div>
+				<div class="col"><button class="btn btn-24"></button></div>
+				<div class="col"><button class="btn btn-25"></button></div>
+				<div class="col"><button class="btn btn-26"></button></div>
+				<div class="col"><button class="btn btn-27"></button></div>
+				<div class="col"><button class="btn btn-28"></button></div>
+			</div>
+
+			<div class="row">
+				<div class="col"><button class="btn btn-29"></button></div>
+				<div class="col"><button class="btn btn-30"></button></div>
+				<div class="col"><button class="btn btn-31"></button></div>
+				<div class="col"><button class="btn btn-32"></button></div>
+				<div class="col"><button class="btn btn-33"></button></div>
+				<div class="col"><button class="btn btn-34"></button></div>
+				<div class="col"><button class="btn btn-35"></button></div>
+			</div>
+
+			<div class="row">
+				<div class="col"><button class="btn btn-36"></button></div>
+				<div class="col"><button class="btn btn-37"></button></div>
+				<div class="col"><button class="btn btn-38"></button></div>
+				<div class="col"><button class="btn btn-39"></button></div>
+				<div class="col"><button class="btn btn-40"></button></div>
+				<div class="col"><button class="btn btn-41"></button></div>
+				<div class="col"><button class="btn btn-42"></button></div>
+			</div>
+
+		</div>
+
+		<button type="button" id="reset-btn">Грати Заново</button>
+	</div>
+	<div class="button-exit">
+		<button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Custom button</button>
+	</div>
+    
+    <button class="level-button" onclick="location.href='game2.html'">Рівень 2</button>
+
+
+	<script src="script.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
